@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "popping";
+  src: url("./assets/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "blolt";
+  src: url("./assets/Poppins/Poppins-Bold.ttf");
+}
+.nav-item {
+  font-family: "popping";
+  font-weight: 400;
+}
+.Black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 630px;
+}
+
+p,
+text,
+.modal-title {
+  font-family: "popping";
+}
+h1 {
+  font-family: "blolt";
+  color: white;
+  font-size: 100px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000; /* Change this color to match your arrow color */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.active {
+  color: #00ffa7 !important;
+}
+button {
+  border-radius: 20px !important;
+  font-weight: 500;
+}
+.modal-header {
+  grid-gap: 10px;
+}
+.nameCOLOR {
+  background: linear-gradient(to left, #00ffa7 50%, #ffff00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.h5 {
+  font-size: 20px !important;
+}
+.box {
+  width: 250px;
+  height: 500px !important;
+}
+.modal-dialog,
+.modal-content {
+  border-radius: 30px;
+  border: 1px solid black;
+}
+.modal-header {
+  border-bottom: 2px solid black;
+}
+.modal-footer {
+  border-top: 2px solid black;
+}
+.modal-body {
+  padding: 10xp;
+  height: 250px;
+}
+h2 {
+  color: #000;
+  font-family: "blolt";
+}
+@media (max-width: 821px) {
+  .container {
+    flex-direction: column;
+  }
+  h1,
+  span {
+    font-size: 40px !important;
+  }
+  .Black {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  button {
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    margin-top: 0px;
+  }
+  span {
+    padding-bottom: 10px;
+  }
+  .navigation {
+    flex-direction: column !important;
+  }
+  @media (max-width: 450px) {
+    .box {
+      width: 312px !important;
+    }
+    .navigation {
+      flex-direction: column !important;
+    }
+    .row {
+      grid-gap: 0px;
+    }
+    p {
+      font-size: 15px !important;
+    }
+    span {
+      display: none;
+    }
+    .nav-item {
+      font-size: 1px;
+    }
+    .navbar-toggler {
+      margin-left: 100px;
+      width: 50px !important;
+    }
+  }
+}
